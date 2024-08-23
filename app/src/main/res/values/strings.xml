@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Login and Sign Up using Firebase</string>
+    <string name="default_web_client_id">712789653343-e9acd5m3ltp5ab6l99topbisgkah27sk.apps.googleusercontent.com</string>
 </resources>

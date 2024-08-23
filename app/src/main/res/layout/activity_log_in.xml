@@ -19,8 +19,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="20dp"
         android:fontFamily="@font/kurale"
         android:text="Sing-Up"
         android:textColor="@color/white"
@@ -33,7 +33,7 @@
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginStart="17.5dp"
-        android:layout_marginTop="345dp"
+        android:layout_marginTop="300dp"
         android:layout_marginEnd="17.5dp"
         android:background="@drawable/edit_text_shape"
         android:elevation="6dp"
@@ -45,6 +45,7 @@
         android:shadowDy="4"
         android:textColorHint="#777777"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -81,7 +82,7 @@
         android:id="@+id/login"
         android:layout_width="160dp"
         android:layout_height="55dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="124dp"
         android:backgroundTint="#312222"
         android:fontFamily="@font/kurale"
         android:text="Login"
@@ -95,7 +96,7 @@
         android:id="@+id/singup"
         android:layout_width="160dp"
         android:layout_height="55dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="124dp"
         android:backgroundTint="#FF0000"
         android:fontFamily="@font/kurale"
         android:text="Sign-Up"
@@ -104,4 +105,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/login" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="#FDF6FE"
+        android:drawableLeft="@drawable/google"
+        android:padding="5dp"
+        android:text="Google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/singup"
+        app:layout_constraintStart_toStartOf="@+id/login" />
 </androidx.constraintlayout.widget.ConstraintLayout>

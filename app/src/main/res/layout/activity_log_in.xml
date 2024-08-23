@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/log_in" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/kurale"
+        android:text="Sing-Up"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="17.5dp"
+        android:layout_marginTop="345dp"
+        android:layout_marginEnd="17.5dp"
+        android:background="@drawable/edit_text_shape"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kurale"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:paddingStart="18dp"
+        android:shadowDy="4"
+        android:textColorHint="#777777"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_shape"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kurale"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="18dp"
+        android:shadowDy="4"
+        android:textColorHint="#777777"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/forgetpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kurale"
+        android:text="Do you forget your password?"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#312222"
+        android:fontFamily="@font/kurale"
+        android:text="Login"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/singup"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/singup"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#FF0000"
+        android:fontFamily="@font/kurale"
+        android:text="Sign-Up"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/login" />
+</androidx.constraintlayout.widget.ConstraintLayout>

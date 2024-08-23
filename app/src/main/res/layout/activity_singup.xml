@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingupActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sing_up" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/kurale"
+        android:text="Sing-Up"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="17.5dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="17.5dp"
+        android:background="@drawable/edit_text_shape"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kurale"
+        android:hint="Your E-mail"
+        android:inputType="text"
+        android:paddingStart="18dp"
+        android:shadowDy="4"
+        android:textColorHint="#777777"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="352dp"
+        android:background="@drawable/edit_text_shape"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kurale"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingStart="18dp"
+        android:shadowDy="4"
+        android:textColorHint="#777777"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/rpassword"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="552dp"
+        android:background="@drawable/edit_text_shape"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kurale"
+        android:hint="Repeat-password"
+        android:inputType="textPassword"
+        android:paddingStart="18dp"
+        android:shadowDy="4"
+        android:textColorHint="#777777"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="452dp"
+        android:background="@drawable/edit_text_shape"
+        android:elevation="6dp"
+        android:ems="10"
+        android:fontFamily="@font/kurale"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="18dp"
+        android:shadowDy="4"
+        android:textColorHint="#777777"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/singin"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#312222"
+        android:fontFamily="@font/kurale"
+        android:text="Sing-In"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/register"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#FF0000"
+        android:fontFamily="@font/kurale"
+        android:text="Register"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/singin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

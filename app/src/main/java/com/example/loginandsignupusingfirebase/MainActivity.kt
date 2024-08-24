@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        binding.logout.setOnClickListener {
+        binding.logout.setOnClickListener {     // logout code
             // Sign out from Firebase
             FirebaseAuth.getInstance().signOut()
 
@@ -49,5 +49,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, LogIn::class.java))
             finish()
         }
+        // logout code finish here
+
+        // note app code
+
+        binding.add.setOnClickListener {
+            startActivity(Intent(this,AddNote::class.java))
+        }
+
+
     }
 }

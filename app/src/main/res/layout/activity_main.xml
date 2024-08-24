@@ -5,16 +5,41 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/black">
+    android:background="@color/white"
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="138dp"
-        android:layout_marginTop="295dp"
+        android:layout_marginBottom="4dp"
         android:text="Log Out"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3EFF1C"
+        android:text="Add Note"
+        app:layout_constraintBottom_toBottomOf="@+id/see"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/see"
+        app:layout_constraintTop_toTopOf="@+id/see"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/see"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        android:backgroundTint="#21B8B3"
+        android:text="See all note "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/add"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

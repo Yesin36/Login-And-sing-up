@@ -57,6 +57,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,AddNote::class.java))
         }
 
+        binding.see.setOnClickListener {
+            startActivity(Intent(this,YourAllNote::class.java))
+        }
+
 
     }
 }

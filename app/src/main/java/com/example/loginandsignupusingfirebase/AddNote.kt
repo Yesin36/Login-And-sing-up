@@ -54,7 +54,7 @@ class AddNote : AppCompatActivity() {
                     val noteKey = database.child("users").child(user.uid).child("notes").push().key
 
                     // note item instance
-                    val noteItem = NoteItem(title,description)
+                    val noteItem = NoteItem(title,description,noteKey?:"")
                     if (noteKey!=null)
                         // add notes to the user note
                         database.child("users").child(user.uid).child("notes").child(noteKey).setValue(noteItem)
